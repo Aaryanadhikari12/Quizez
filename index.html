@@ -1,0 +1,587 @@
+ <html>
+    
+  <head>
+    <style>
+      img{
+        float:left;
+        top:0%;
+      }
+      body{
+        margin:0px;
+        padding:0px;
+      background-color:lightyellow;
+        background-size:cover;
+        width:100%;
+        
+      }
+      
+      .nav ul{
+     
+        background-color:grey;
+        text-align:center;
+        padding:0px;
+        margin:0px;
+        
+        
+        
+      }
+      
+      
+      .nav li{
+        list-style:none;
+        display:inline-block;
+        
+        
+      }
+      .nav a{
+        text-decoration:none;
+        color:#fff;
+        width:100px;
+        height:50px;
+        line-height:50px;
+        display:block;
+        padding:15px;
+        font-size:20px;
+        font-weight:bold;
+        font-family:Arial black;
+        
+        
+        
+      }
+      .nav a:hover{
+        background:white;
+        transition:0.4s ease;
+        color:black;
+      }
+      h3,h1
+      {
+        color:black;
+      }
+      
+      a{
+        text-decoration:none;
+        font-size:18px;
+        color:black;
+        text-align:center;
+        display:block;
+        
+      }
+      #opt1,#opt2,#opt3,#opt4,#opti1,#opti2,#opti3,#opti4,#optio1,#optio2,#optio3,#optio4,#option1
+      ,#option2,#option3,#option4,#option11,#option12,#option13,#option14{
+        border:3px solid #6cfbfc;
+        width:200px;
+        
+        
+      }
+      #btn{
+        width:400px;
+        
+        
+      }
+      #hide,#hide1,#hide11,#hide111,#aaa{
+        float:center;
+        
+        visibility:hidden;
+      }
+
+      #quizez{
+        width:350px;
+        position:relative;
+        left:290px;
+        height:1400px;
+        
+      }
+      #homepge{
+        background-color:white;
+        display:block;
+        color:black;
+      }
+      #footer{
+        background-color:grey;
+        height:500px;
+        border:2px solid black;
+        
+      }
+        
+      #review{
+        height:90px;
+        width:130px;
+      }
+      #revi{
+        
+        height:125px;
+        border:2px solid white;
+        box-shadow:3px;
+        visibility:hidden;
+        
+        
+        
+        
+      }
+          </style>
+   </head>
+    <body>
+    
+        
+          
+      <nav>
+    
+      <div class="logo">
+        
+      <img src="image.png" width="200px" height="80px"></div>
+      <div class="nav">
+        <ul>
+          <li><a href="#"id="homepge">Home</a></li>
+          <li><a href="aboutus.html">About US</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+</nav>
+        <div id="quizez">
+<h3>
+ Q1.How old is Queen Elizabeth II?
+</h3><div id="option">
+      <div id="opt1">
+        <a href="#" onclick="wrongans()" id="hid3">89</a>
+      </div>
+     
+      <br>
+      
+        
+      
+      <div id="opt2">
+        <a href="#" onclick="wrightans()" id="hid">94</a>
+      </div>
+      
+      <br>
+      <div id="opt3">
+        <a href="#"onclick="wrongans1()"id="hid1">97</a>
+      </div>
+      <br>
+     <div id="opt4">
+       <a href="#"onclick="wrongans2()"id="hid2">none of the above</a>
+      </div>
+      <br>
+      
+      <div id="btn">
+      <button type="button"onclick="reset()"id="hide">
+        
+        Try Again
+      </button>
+        
+    </div>
+      <script>
+function wrightans(){
+  document.getElementById('opt2').style.backgroundColor="green";
+  document.getElementById('hid3').style.visibility="hidden";
+  document.getElementById('hid1').style.visibility="hidden";
+  document.getElementById('hid2').style.visibility="hidden";
+  
+
+}
+
+  function wrongans(){
+    document.getElementById('opt1').style.backgroundColor="red";
+      document.getElementById('hide').style.visibility="visible";
+    document.getElementById('hid').style.visibility="hidden";
+    document.getElementById('hid1').style.visibility="hidden";
+    document.getElementById('hid2').style.visibility="hidden";
+  }
+  function wrongans1(){
+    document.getElementById('opt3').style.backgroundColor="red";
+      document.getElementById('hide').style.visibility="visible";
+    document.getElementById('hid').style.visibility="hidden";
+    document.getElementById('hid2').style.visibility="hidden";
+    document.getElementById('hid3').style.visibility="hidden";
+    
+  }
+  function wrongans2(){
+    document.getElementById('opt4').style.backgroundColor="red";
+    document.getElementById('hide').style.visibility="visible";
+    document.getElementById('hid').style.visibility="hidden";
+    document.getElementById('hid1').style.visibility="hidden";
+    document.getElementById('hid3').style.visibility="hidden";
+    
+  }
+  function reset(){
+    document.getElementById('opt1').style.backgroundColor="lightyellow";
+     document.getElementById('opt3').style.backgroundColor="lightyellow";
+     document.getElementById('opt4').style.backgroundColor="lightyellow";
+    document.getElementById('hide').style.visibility="hidden";
+    document.getElementById('hid').style.visibility="visible";
+    document.getElementById('hid1').style.visibility="visible";
+    document.getElementById('hid2').style.visibility="visible";
+    document.getElementById('hid3').style.visibility="visible";
+  }  
+  
+  </script>
+  </div>
+      <!--Question no 2 started//-->
+      <h3>
+        Q2. Who is the father of Printing?
+      </h3>
+      <div id="option1111">
+      <div id="opti1">
+        <a href="#" onclick="wrongans11()" id="hid13">Ian Wilmut</a>
+      </div>
+     
+      <br>
+      
+        
+      
+        <div id="opti2">
+       <a href="#" onclick="wrongans10()" id="hid10">Sigmund Freud</a>
+      </div>
+      
+      <br>
+      <div id="opti3">
+        <a href="#"onclick="wrightans1()"id="hid11">Guttenberg</a>
+      </div>
+      <br>
+     <div id="opti4">
+       <a href="#"onclick="wrongans20()"id="hid12">Herodotus</a>
+      </div>
+      <br>
+      
+      <div id="btn">
+      <button type="button"onclick="reset1()"id="hide1">
+        
+        Try Again
+      </button>
+        
+    </div>
+  </div>
+      <script>
+function wrightans1(){
+  document.getElementById('opti3').style.backgroundColor="green";
+  document.getElementById('hid13').style.visibility="hidden";
+  document.getElementById('hid10').style.visibility="hidden";
+  document.getElementById('hid12').style.visibility="hidden";
+  
+
+}
+
+  function wrongans11(){
+    document.getElementById('opti1').style.backgroundColor="red";
+      document.getElementById('hide1').style.visibility="visible";
+    document.getElementById('hid10').style.visibility="hidden";
+    document.getElementById('hid11').style.visibility="hidden";
+    document.getElementById('hid12').style.visibility="hidden";
+  }
+  function wrongans10(){
+    document.getElementById('opti2').style.backgroundColor="red";
+      document.getElementById('hide1').style.visibility="visible";
+    document.getElementById('hid11').style.visibility="hidden";
+    document.getElementById('hid12').style.visibility="hidden";
+    document.getElementById('hid13').style.visibility="hidden";
+    
+  }
+  function wrongans20(){
+    document.getElementById('opti4').style.backgroundColor="red";
+    document.getElementById('hide1').style.visibility="visible";
+    document.getElementById('hid10').style.visibility="hidden";
+    document.getElementById('hid11').style.visibility="hidden";
+    document.getElementById('hid13').style.visibility="hidden";
+    
+  }
+  function reset1(){
+    document.getElementById('opti1').style.backgroundColor="lightyellow";
+     document.getElementById('opti2').style.backgroundColor="lightyellow";
+     document.getElementById('opti4').style.backgroundColor="lightyellow";
+    document.getElementById('hide1').style.visibility="hidden";
+    document.getElementById('hid10').style.visibility="visible";
+    document.getElementById('hid11').style.visibility="visible";
+    document.getElementById('hid12').style.visibility="visible";
+    document.getElementById('hid13').style.visibility="visible";
+  }  
+  
+  </script>
+      <!--Question no 3 started-->
+      <h3>
+   Q4. What is the most coffee-producing country in the world?
+   
+      </h3>
+      <div id="option111">
+      <div id="optio1">
+        <a href="#" onclick="wrongans111()" id="hid131">Nepal</a>
+      </div>
+     
+      <br>
+      
+        
+      <div id="optio3">
+        <a href="#"onclick="wrightans11()"id="hid111">Brazil</a>
+      </div>
+      <br>
+        <div id="optio2">
+       <a href="#" onclick="wrongans101()" id="hid101">Turkey</a>
+      </div>
+      
+     
+      <br>
+     <div id="optio4">
+       <a href="#"onclick="wrongans201()"id="hid121">Singapore</a>
+      </div>
+      <br>
+      
+      <div id="btn">
+      <button type="button"onclick="reset11()"id="hide11">
+        
+        Try Again
+      </button>
+        
+    </div>
+  </div>
+   <script>
+function wrightans11(){
+  document.getElementById('optio3').style.backgroundColor="green";
+  document.getElementById('hid131').style.visibility="hidden";
+  document.getElementById('hid101').style.visibility="hidden";
+  document.getElementById('hid121').style.visibility="hidden";
+  
+
+}
+
+  function wrongans111(){
+    document.getElementById('optio1').style.backgroundColor="red";
+      document.getElementById('hide11').style.visibility="visible";
+    document.getElementById('hid101').style.visibility="hidden";
+    document.getElementById('hid111').style.visibility="hidden";
+    document.getElementById('hid121').style.visibility="hidden";
+  }
+  function wrongans101(){
+    document.getElementById('optio2').style.backgroundColor="red";
+      document.getElementById('hide11').style.visibility="visible";
+    document.getElementById('hid111').style.visibility="hidden";
+    document.getElementById('hid121').style.visibility="hidden";
+    document.getElementById('hid131').style.visibility="hidden";
+    
+  }
+  function wrongans201(){
+    document.getElementById('optio4').style.backgroundColor="red";
+    document.getElementById('hide11').style.visibility="visible";
+    document.getElementById('hid101').style.visibility="hidden";
+    document.getElementById('hid111').style.visibility="hidden";
+    document.getElementById('hid131').style.visibility="hidden";
+    
+  }
+  function reset11(){
+    document.getElementById('optio1').style.backgroundColor="lightyellow";
+     document.getElementById('optio2').style.backgroundColor="lightyellow";
+     document.getElementById('optio4').style.backgroundColor="lightyellow";
+    document.getElementById('hide11').style.visibility="hidden";
+    document.getElementById('hid101').style.visibility="visible";
+    document.getElementById('hid111').style.visibility="visible";
+    document.getElementById('hid121').style.visibility="visible";
+    document.getElementById('hid131').style.visibility="visible";
+  }  
+  
+  </script>
+<!--Question no 4 Started--->
+     <h3>
+     Q5. Who is the last king of patan?
+     </h3>      <div id="option1000">
+      <div id="option1">
+        <a href="#" onclick="wrongans1111()" id="hid1311">prithivi Narsingh Malla</a>
+          </div>
+      <br>
+      
+        
+      
+        <div id="option2">
+       <a href="#" onclick="wrongans1010()" id="hid1011">Laxmi Narsingh Malla</a>
+      </div>
+      
+      <br>
+      <div id="option3">
+        <a href="#"onclick="wrightans111()"id="hid1111">Tej Narsingh Malla </a>
+      </div>
+      <br>
+     <div id="option4">
+       <a href="#"onclick="wrongans2010()"id="hid1211">None of the above </a>
+      </div>
+      <br>
+      
+      <div id="btn">
+      <button type="button"onclick="reset111()"id="hide111">
+        
+        Try Again
+      </button>
+        
+    </div>
+  </div>
+      <script>
+        function wrightans111(){
+  document.getElementById('option3').style.backgroundColor="green";
+  document.getElementById('hid1311').style.visibility="hidden";
+  document.getElementById('hid1011').style.visibility="hidden";
+  document.getElementById('hid1211').style.visibility="hidden";
+  
+
+}
+      
+
+
+  function wrongans1111(){
+    document.getElementById('option1').style.backgroundColor="red";
+      document.getElementById('hide111').style.visibility="visible";
+    document.getElementById('hid1011').style.visibility="hidden";
+    document.getElementById('hid1111').style.visibility="hidden";
+    document.getElementById('hid1211').style.visibility="hidden";
+  }
+  function wrongans1010(){
+    document.getElementById('option2').style.backgroundColor="red";
+      document.getElementById('hide111').style.visibility="visible";
+    document.getElementById('hid1111').style.visibility="hidden";
+    document.getElementById('hid1211').style.visibility="hidden";
+    document.getElementById('hid1311').style.visibility="hidden";
+    
+  }
+  function wrongans2010(){
+    document.getElementById('option4').style.backgroundColor="red";
+    document.getElementById('hide111').style.visibility="visible";
+    document.getElementById('hid1011').style.visibility="hidden";
+    document.getElementById('hid1211').style.visibility="hidden";
+    document.getElementById('hid1311').style.visibility="hidden";
+    
+  }
+  function reset111(){
+    document.getElementById('option1').style.backgroundColor="lightyellow";
+     document.getElementById('option2').style.backgroundColor="lightyellow";
+     document.getElementById('option4').style.backgroundColor="lightyellow";
+    document.getElementById('hide111').style.visibility="hidden";
+    document.getElementById('hid1011').style.visibility="visible";
+    document.getElementById('hid1111').style.visibility="visible";
+    document.getElementById('hid1211').style.visibility="visible";
+    document.getElementById('hid1311').style.visibility="visible";
+  }  
+  
+  </script>
+          <!--Question number 5 started-->
+          
+           <h3>
+     Q5. Indian Premier League (IPL) matches were started from which year?
+     </h3>      <div id="option10001">
+      <div id="option11">
+        <a href="#" onclick="aaryan()" id="sh">2001 AD</a>
+          </div>
+      <br>
+      
+        
+      
+        <div id="option12">
+       <a href="#" onclick="aaryan1()" id="an">1945 AD</a>
+      </div>
+      
+      <br>
+      <div id="option13">
+        <a href="#"onclick="aaryan12()"id="daisy">2008 AD </a>
+      </div>
+      <br>
+     <div id="option14">
+       <a href="#"onclick="aaryan10()"id="ti">2014 AD</a>
+      </div>
+      <br>
+      
+      <div id="btn">
+      <button type="button"onclick="sugam()"id="aaa">
+        
+        Try Again
+      </button>
+        
+    </div>
+  </div>
+      <script>
+        function aaryan12(){
+  document.getElementById('option13').style.backgroundColor="green";
+  document.getElementById('sh').style.visibility="hidden";
+  document.getElementById('an').style.visibility="hidden";
+  document.getElementById('ti').style.visibility="hidden";
+  
+
+}
+      
+
+
+  function aaryan1(){
+    document.getElementById('option12').style.backgroundColor="red";
+      document.getElementById('aaa').style.visibility="visible";
+    document.getElementById('sh').style.visibility="hidden";
+    document.getElementById('ti').style.visibility="hidden";
+    document.getElementById('daisy').style.visibility="hidden";
+  }
+  function aaryan(){
+    document.getElementById('option11').style.backgroundColor="red";
+      document.getElementById('aaa').style.visibility="visible";
+    document.getElementById('daisy').style.visibility="hidden";
+    document.getElementById('an').style.visibility="hidden";
+    document.getElementById('ti').style.visibility="hidden";
+    
+  }
+  function aaryan10(){
+    document.getElementById('option14').style.backgroundColor="red";
+    document.getElementById('aaa').style.visibility="visible";
+    document.getElementById('daisy').style.visibility="hidden";
+    document.getElementById('sh').style.visibility="hidden";
+    document.getElementById('an').style.visibility="hidden";
+    
+  }
+  function sugam(){
+    document.getElementById('option11').style.backgroundColor="lightyellow";
+     document.getElementById('option12').style.backgroundColor="lightyellow";
+     document.getElementById('option14').style.backgroundColor="lightyellow";
+    document.getElementById('aaa').style.visibility="hidden";
+    document.getElementById('sh').style.visibility="visible";
+    document.getElementById('an').style.visibility="visible";
+    document.getElementById('ti').style.visibility="visible";
+    document.getElementById('daisy').style.visibility="visible";
+  }  
+  
+  </script>
+    
+          
+          
+          
+   </div>
+      <br><br><br><br><br>
+   
+      <div id="footer">
+        <h2>
+          Please give us a review about our website!
+        </h2>
+        <form>
+          
+        
+       <h3>
+         
+          Name: 
+           </h3>
+         <input type="text" id="name" placeholder="Enter Your Name">
+        <br><br>
+           <h3>
+            Review:
+               </h3>
+          <input type="text"  id="review"placeholder="How do you feel about our website??">
+        <br><br>
+        <input type="submit" onclick="review()">
+        </form>
+     <h4>
+    
+        </h4>
+      <h2 id="revi">
+        Thanks for reviewing our Website! 
+        </h2>
+       
+      
+     </div>
+      
+      <script>
+      function review(){
+            document.getElementById('revi').style.visibility="visible";
+      }
+      </script>
+      
+      
+   </body>
+</html>
+     
